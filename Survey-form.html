@@ -10,28 +10,35 @@
 </head>
 
 <body>
-    <div class="form-container">
+    <form class="form-container">
         <h1>Employee Interests Survey form:</h1>
         <br><br>
 
 
         <div class="employee-name">
             Enter your name:
-            <input placeholder="Enter your full name please">
+            <input type="text">
+        </div>
+        <br>
+
+        <div>
+            <label>Enter your date of birth:
+                <input type="date">
+            </label>
         </div>
         <br>
 
 
         <div class="department-form">
             Enter your department:
-            <input>
+            <input type="text">
         </div>
         <br>
 
 
         <div class="talk-about-your-self">
             <div>Tell us a little about yourself:
-                <input placeholder="In 50 words or more.">
+                <input type="text" placeholder="In 50 words or more.">
             </div>
         </div>
         <br>
@@ -39,8 +46,10 @@
 
         <div class="question1">
             Do you exercise at home?
-            <input type="checkbox">Yes
-            <input type="checkbox">No
+            <input type="radio" name="yes-or-no">
+            <label for="Yes">Yes</label>
+            <input type="radio" name="yes-or-no">
+            <label for="No">No</label>
         </div>
         <br>
 
@@ -73,11 +82,12 @@
         <br><br>
 
 
-        <div>
-            <button class="submit">Submit form</button>
-        </div>
 
-    </div>
+        <input type="submit">
+        <input type="reset">
+
+
+    </form>
 
 
 
